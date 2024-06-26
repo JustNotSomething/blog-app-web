@@ -1,0 +1,171 @@
+@font-face {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+  }
+  
+  
+  .form {
+    font-family: "Pacifico", cursive;
+
+    background-color: #7E7E9B;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 550px;
+    padding: 20px;
+    width: 320px;
+    box-shadow: 0 4px 8px  #1E362F;
+  }
+  
+  .title {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .subtitle {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .ic1 {
+    margin-top: 40px;
+  }
+  
+  .ic2 {
+    margin-top: 30px;
+  }
+  
+  .input {
+    background-color: #1C1C1F;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+    border: 2px solid aliceblue;
+  }
+  
+  .cut {
+    background-color: #7E7E9B;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 60px;
+  }
+
+ 
+  
+  .cut-short {
+    width: 50px;
+  }
+  
+  .input:focus ~ .cut,
+  .input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+    border: 1px solid aliceblue;
+  }
+  
+  .placeholder {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+  }
+  
+  .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+  }
+  
+  .input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+  }
+  
+  .input:focus ~ .placeholder {
+    color: #14241F;
+  }
+  
+  .submit {
+    background-color: #1E362F;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+     outline: 0;
+    text-align: center;
+    width: 100%;
+    color: #2EAC7F;
+
+  }
+  
+  .submit:active {
+    background-color: #06b;
+  }
+  
+
+  .pmd{
+    width:75px;
+  }
+
+ .cut-one{
+    width:45px;
+  }
+
+  .error-message {
+    color: rgb(65, 9, 9);
+    font-size: 0.8em;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+
+  .delete-btn{
+    background-color: #430505;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 18px;
+     outline: 0;
+    text-align: center;
+    width: 100%;
+    color: #a12020;
+    margin-bottom: 20px;
+  }
+
+  .form-ed{
+    height:600px
+  }
